@@ -1,0 +1,117 @@
+body,html{
+	height: 100%;
+	padding: .1%;
+	margin: 0;
+    100%;
+	/*overflow: scroll;*/
+	
+}
+
+/*-------- NAV Bar and Search  -----------*/
+.nav{
+  width: 100%; /* We want to expand the full width of the screen*/
+  height: 60px;
+  text-align: center;
+  list-style-type: none;
+  overflow: scroll;
+  background-color: #130808;
+  
+}
+
+.nav li {float: right;} /* Float content on Navbar to the right*/
+
+.nav li a{
+    transition: 0.5s; /*Aesthetics*/
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:  22px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 17px;
+}
+.nav li a:hover{
+    background-color: aquamarine;
+    text-emphasis-color: red;
+}
+
+#findsec { /* The search bar and button */
+    float: right;
+    margin: 6px;
+    padding: 4px;
+    transition: 0.5s;
+}
+#entersite { /*Input box for search section */
+    margin:5px;
+    padding: 5px;
+    float:auto;
+}
+
+#findbutton { /*The find button */
+    height: 24px;
+    width:60px;
+}
+#findbutton:hover{ /*Change colour when cursor hovers over button*/
+    background-color:aquamarine;
+    text-decoration-color: darkred;
+}
+
+/*---------- End of Nav Bar and search bar-----*/
+
+
+.box {
+	height: 70%;
+	margin: 10%;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+	background-color: rgba(0, 0, 0, 0);	
+	width:80%;
+  vertical-align: center;
+	 
+}
+
+.box p { 
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 26.4px;
+	text-align: center;
+	width: 50%;
+	text-align: center;
+	width: 100%;
+ }
+
+
+
+
+
+
+
+
+/*--------- Footer ------*/
+
+#footer{
+  width: 100%; /* We want to expand the full width of the screen*/
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #130808;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+#footer li {
+    float:none;
+    
+}
+
+#footer li{
+    display: inline-block;
+    padding: auto;
+    
+}
+
+#footer li a{
+    padding:22px;
+}

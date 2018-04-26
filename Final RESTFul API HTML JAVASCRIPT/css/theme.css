@@ -1,0 +1,304 @@
+body,html{
+	height: 100%;
+	padding: .1%;
+	margin: 0;
+    padding: 0;
+    font-family: Roboto, san-serif;
+	/*overflow: scroll;*/
+	
+}
+.wrap {
+    margin-top: 105vh;
+}
+
+#map-weather-search-container{
+    display:none;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+
+}
+
+/*-------- NAV Bar and Search  -----------*/
+.nav{
+  width: 100%; /* We want to expand the full width of the screen*/
+  height: 60px;
+  text-align: center;
+  list-style-type: none;
+  overflow: scroll;
+  background-color: #130808;
+  
+}
+
+.nav li {float: right;} /* Float content on Navbar to the right*/
+
+.nav li a{
+    transition: 0.5s; /*Aesthetics*/
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:  22px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 17px;
+}
+.nav li a:hover{
+    background-color: aquamarine;
+    text-emphasis-color: red;
+}
+
+#findsec { /* The search bar and button */
+    float: right;
+    margin: 6px;
+    padding: 4px;
+    transition: 0.5s;
+}
+#entersite { /*Input box for search section */
+    margin:5px;
+    padding: 5px;
+    float:auto;
+}
+
+#findbutton { /*The find button */
+    height: 24px;
+    width:60px;
+}
+#findbutton:hover{ /*Change colour when cursor hovers over button*/
+    background-color:aquamarine;
+    text-decoration-color: darkred;
+}
+
+/*---------- End of Nav Bar and search bar-----*/
+
+/*-----------Slide show----------*/
+/*Bringing the images using CSS instead of html as it enables text to be printed on with ease*/
+.img1{ 
+    background-image: /*London image*/ url("../Images/parl5f.jpg")
+}
+.img2{
+    background-image: /*Cardiff image */ url("../Images/cardiff2f.jpg")
+}
+
+.img3{
+    background-image: /* Stonehenge image*/ url("../Images/stone2f.jpg")
+}
+.slideimg{ /*Setting out the conditons for the slide show images*/
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    
+}
+
+.slidetext {
+    text-align: right;
+    padding-top: 20%;
+    padding-right: 20%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.slidetext h3{ /* Determine the text field on the slides */
+    font-size: 42px;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 46px;
+    color: whitesmoke;
+    
+}
+
+.slidetext p{
+    color: antiquewhite;
+    font-size: 23px;
+}
+
+/* ------Weather API set up and etc ------*/
+
+.weathdes{
+    text-transform: capitalize; /*  capitalisation of Weather API */
+}
+
+.wdiff{ /*Weather low and high temp */
+    color:white;
+    font-size:32px;
+}
+
+.wtemp{
+    color:white;
+    font-size:42px;
+}
+
+/*=========== Begin the intro field to the city ===== */
+
+
+}
+
+.citytext { /* Setting out text parameters */
+    position: right;
+    max-width: 800px;
+    
+}
+
+h1#uk {
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+.introdiv { /* Introductory div and text contained */
+	text-align: center;
+	width:60%;
+	margin: auto;
+	margin-top: 3%;
+	font-family:san;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	//font-weight: bold;
+	line-height: 26.4px;
+	color:black;
+}
+
+.citytext {
+    font-size: 25;
+}
+
+#citycon { /* Drop down list for the city option list */
+    
+    padding:7%;
+    Margin: auto;
+    width: 140px;               
+    background-color: #ffff;
+    
+}
+
+#citycon2 {
+    width: 150px;
+    height: 30px;
+}
+#citycon2 {
+    font-size: 19px; /* Dropdown list font size and positoning above */    
+}
+
+/*-- Second search box ----*/
+
+#findsec2 {
+   	margin-left:26%;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+
+}
+#findsec2 input {
+	width:50%;
+	height:20px;
+}
+
+#findsec2 button{
+	height:30px
+}
+
+/*----- Please type in the name of name of any city ------*/
+
+
+#please{ /* Search instructions -----------*/
+    margin-top:2rem;
+    margin-left:30%;
+    font-size: 29px;
+}
+
+
+
+
+/*-- Weather info and table --*/
+
+#weatherHeading{
+	font-size:3rem;
+	font-weight:bold;
+
+
+}
+
+#weatherSection h2{
+}
+
+td {
+    margin-right: 2rem;
+}
+
+#weatherIcon{
+	margin-left:43%;
+	font-size:30px;
+}
+
+#weatherSection {
+    text-align: center;
+}
+
+#weatherDescription{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/*-- Tables ----*/
+
+#table{
+     text-align: center;
+}
+
+/*-- Tables ----*/
+
+#table{
+     text-align: center;
+     margin: 0 auto;
+}
+
+/* Trying insert Google maps -----------*/
+
+#mapSection{
+    height: 100%;
+
+}
+#mapSection h2{
+	font-size:40px;
+	margin-top: 1rem;
+	margin-left:47%;
+}
+
+#map{
+    height: 500px;
+    margin:auto;
+    margin-top:1rem;
+}
+/* Footer ------*/
+
+#footer{
+  width: 100%; /* We want to expand the full width of the screen*/
+  height: 60px;
+  margin: % auto;
+  text-align: center;
+  background-color: #130808;
+  
+}
+
+#footer li {
+    float:none;
+    
+}
+
+#footer li{
+    display: inline-block;
+    padding: auto;
+    
+}
+
+#footer li a{
+    padding:22px;
+}
+
+
+
